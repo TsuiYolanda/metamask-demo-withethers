@@ -42,7 +42,7 @@ export default function ReadERC20(props:Props){
     <form onSubmit={transfer}>
     <FormControl>
     <FormLabel htmlFor='amount'>Amount: </FormLabel>
-      <NumberInput defaultValue={amount} min={10} max={1000} onChange={handleChange}>
+      <NumberInput defaultValue={amount} min={1} max={1000} onChange={handleChange}>
         <NumberInputField />
       </NumberInput>
       <FormLabel htmlFor='toaddress'>To address: </FormLabel>

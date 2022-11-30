@@ -57,8 +57,6 @@ export default function ReadERC20(props:Props){
     if(!currentAccount) return
     console.log("accountchanged:",currentAccount)
     setTokenID(undefined)
-    setTotalSupply(undefined)
-    setSymbol(undefined)
     SetBalance(undefined)
     setTokenIDNum(undefined)
     setTokenURL(undefined)
@@ -69,7 +67,7 @@ export default function ReadERC20(props:Props){
 
     queryTokenBalance(window)
     queryTokenID(window)
-    queryTokenData(window)
+    // queryTokenData(window)
 
     const provider = new ethers.providers.Web3Provider(window.ethereum)
     const erc20:Contract = new ethers.Contract(addressContract, abi, provider)
@@ -92,7 +90,7 @@ export default function ReadERC20(props:Props){
         console.log('Transfer|sent',  {from, to, amount, event} )
         queryTokenBalance(window)
         queryTokenID(window)
-        queryTokenData(window)
+        // queryTokenData(window)
     })
 
     const toMe = erc20.filters.Transfer(null, currentAccount)
@@ -100,7 +98,7 @@ export default function ReadERC20(props:Props){
         console.log('Transfer|received',  {from, to, amount, event} )
         queryTokenBalance(window)
         queryTokenID(window)
-        queryTokenData(window)
+        // queryTokenData(window)
     })
 
     // remove listener when the component is unmounted
@@ -126,12 +124,14 @@ export default function ReadERC20(props:Props){
     console.log('queryTokenData:currentAccount:'+currentAccount);
     const index : number= 0;
     console.log("tokenIDNum before:",TokenIDNum)
+    window.alert("step1 tokenOfOwnerByIndex")
     erc20.tokenOfOwnerByIndex(currentAccount,index)
     .then((result:BigNumber)=>{
         console.log(result);
         setTokenID(ethers.utils.formatUnits(result,0));
         setTokenIDNum(result);
-        console.log("tokenIDNum after:",TokenIDNum)
+        console.log("tokenIDNum after:",TokenIDNum);
+        queryTokenData(window)
   }).catch((e:Error)=>console.log(e))
   }
 
@@ -139,6 +139,7 @@ export default function ReadERC20(props:Props){
     const provider = new ethers.providers.Web3Provider(window.ethereum)
     const erc20:Contract = new ethers.Contract(addressContract, abi, provider);
     console.log('queryTokenData:currentAccount:'+currentAccount);
+    window.alert("step2 tokenURI")
     erc20.tokenURI(TokenIDNum)
     .then((result:string)=>{
         console.log("tokenuri: "+result);
@@ -150,6 +151,7 @@ export default function ReadERC20(props:Props){
   }
   
   async function fetchTokenInfo(url:string) {
+    window.alert("step3 fetch"+url)
     fetch(url,{method:'get'}).then(res=>res.json())
     .then(data => {
       console.log("result is ",data,data["name"],data["description"],data["image"],data["external_url"]);
