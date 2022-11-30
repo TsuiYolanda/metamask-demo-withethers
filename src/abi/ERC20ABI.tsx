@@ -1,34 +1,15 @@
 
 export const ERC20ABI = [
-    // // Read-Only Functions
-    // "function balanceOf(address owner) view returns (uint256)",
-    // "function totalSupply() view returns (uint256)",
-    // "function decimals() view returns (uint8)",
-    // "function symbol() view returns (string)",
-    // // Authenticated Functions
-    // "function transfer(address to, uint amount) returns (bool)",
-    // // Events
-    // "event Transfer(address indexed from, address indexed to, uint amount)"
-
-    // Some details about the token
     "function name() view returns (string)",
     "function symbol() view returns (string)",
-
-    // Get the account balance
     "function balanceOf(address) view returns (uint)",
-
-    // Send some of your tokens to someone else
     "function transfer(address to, uint amount)",
-
-    // An event triggered whenever anyone transfers to someone else
     "event Transfer(address indexed from, address indexed to, uint amount)",
-
     "function getTokenData(string) view returns (string)",
     "function tokenByIndex(uint) view returns (uint)",
     "function totalSupply() view returns (uint)",
     "function tokenOfOwnerByIndex(address,uint) view returns (uint)",
     "function tokenURI(uint256) view returns (string)"
-
 ];
 
 
