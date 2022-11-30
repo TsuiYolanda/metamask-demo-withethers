@@ -74,6 +74,16 @@ export default function ReadERC20(props:Props){
     const provider = new ethers.providers.Web3Provider(window.ethereum)
     const erc20:Contract = new ethers.Contract(addressContract, abi, provider)
 
+    provider.getBlockNumber().then((blockNumber)=>{
+      console.log("Current block number: " + blockNumber);
+      provider.getBlock(blockNumber).then((blockinfo)=>{
+      console.log("blockinfor",blockinfo)
+      });
+      provider.lookupAddress(currentAccount).then(function (address){
+        console.log("ENS:"+address)
+      })
+    })
+
     // listen for changes on an Ethereum address
     console.log(`listening for Transfer...`)
 

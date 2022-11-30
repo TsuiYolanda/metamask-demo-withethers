@@ -58,7 +58,7 @@ const Home: NextPage = () => {
       let etherscanProvider = new ethers.providers.EtherscanProvider();
       etherscanProvider.getHistory(currentAccount).then((history) => {
           history.forEach((tx) => {
-              console.log(tx);
+              console.log("gethistory:",tx);
           })
       });}
     }).catch((e)=>console.log(e))
