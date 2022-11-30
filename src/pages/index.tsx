@@ -1,7 +1,6 @@
 // src/pages/index.tsx
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import NextLink from "next/link"
 import { VStack, Heading, Box, LinkOverlay, LinkBox} from "@chakra-ui/layout"
 import { Text, Button } from '@chakra-ui/react'
 import { useState, useEffect} from 'react'
@@ -48,15 +47,6 @@ const Home: NextPage = () => {
       console.log("please install MetaMask")
       return
     }
-    /*
-    //change from window.ethereum.enable() which is deprecated
-    //call window.ethereum.request() directly
-    window.ethereum.request({ method: 'eth_requestAccounts' })
-    .then((accounts:any)=>{
-      if(accounts.length>0) setCurrentAccount(accounts[0])
-    })
-    .catch('error',console.error)
-    */
 
     //we can do it using ethers.js
     const provider = new ethers.providers.Web3Provider(window.ethereum)
@@ -102,8 +92,8 @@ const Home: NextPage = () => {
         {currentAccount  
           ?<Box  mb={0} p={4} w='100%' borderWidth="1px" borderRadius="lg">
           <Heading my={4}  fontSize='xl'>Account info</Heading>
-          <Text>ETH Balance of current account: {balance}</Text>
-          <Text>Chain Info: ChainId {chainId} name {chainname}</Text>
+          <Text><b>ETH Balance of current account</b>: {balance}</Text>
+          <Text><b>Chain Info: ChainId</b> {chainId} <b>name</b> {chainname}</Text>
         </Box>
         :<></>
         }

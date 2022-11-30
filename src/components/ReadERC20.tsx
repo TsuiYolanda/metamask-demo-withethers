@@ -1,12 +1,12 @@
 // src/components/ReadERC20.tsx
 import React, {useEffect, useState } from 'react'
-import {Text} from '@chakra-ui/react'
+import {Divider, Text} from '@chakra-ui/react'
 import {Box} from '@chakra-ui/react'
 import {Image} from '@chakra-ui/react'
 import {ERC20ABI as abi} from 'abi/ERC20ABI'
 import {BigNumber, ethers} from 'ethers'
 import { Contract } from "ethers"
-import { ThemeContext } from '@emotion/react'
+import { keyframes, ThemeContext } from '@emotion/react'
 
 interface Props {
     addressContract: string,
@@ -18,12 +18,16 @@ declare let window: any
 export default function ReadERC20(props:Props){
   const addressContract = props.addressContract
   const currentAccount = props.currentAccount
-  const [totalSupply,setTotalSupply]=useState<string>()
-  const [symbol,setSymbol]= useState<string>("")
+  const [totalSupply,setTotalSupply]=useState<string | undefined>()
+  const [symbol,setSymbol]= useState<string | undefined>()
   const [balance, SetBalance] =useState<number|undefined>(undefined)
-  const [TokenID,setTokenID]= useState<string>("")
+  const [TokenID,setTokenID]= useState<string | undefined>()
   const [TokenIDNum,setTokenIDNum]= useState<BigNumber|undefined>(undefined)
-  const [TokenURL,setTokenURL]= useState<string>("")
+  const [TokenURL,setTokenURL]= useState<string | undefined>()
+  const [TokenName,setTokenName] = useState<string | undefined>()
+  const [TokenImg,setTokenImg] = useState<string | undefined>()
+  const [TokenDesp,setTokenDesp] = useState<string | undefined>()
+  const [TokenExternalUri,setTokenExternalUri] = useState<string | undefined>()
 
   useEffect( () => {
     if(!window.ethereum) return
@@ -40,7 +44,7 @@ export default function ReadERC20(props:Props){
       }).catch((e:Error)=>console.log(e))
 
       erc20.totalSupply().then((result:string)=>{
-          setTotalSupply(ethers.utils.formatEther(result))
+          setTotalSupply(ethers.utils.formatUnits(result,0))
       }).catch((e:Error)=>console.log(e))
 
     })
@@ -51,6 +55,17 @@ export default function ReadERC20(props:Props){
   useEffect(()=>{
     if(!window.ethereum) return
     if(!currentAccount) return
+    console.log("accountchanged:",currentAccount)
+    setTokenID(undefined)
+    setTotalSupply(undefined)
+    setSymbol(undefined)
+    SetBalance(undefined)
+    setTokenIDNum(undefined)
+    setTokenURL(undefined)
+    setTokenName(undefined)
+    setTokenImg(undefined)
+    setTokenDesp(undefined)
+    setTokenExternalUri(undefined)
 
     queryTokenBalance(window)
     queryTokenID(window)
@@ -66,12 +81,16 @@ export default function ReadERC20(props:Props){
     erc20.on(fromMe, (from, to, amount, event) => {
         console.log('Transfer|sent',  {from, to, amount, event} )
         queryTokenBalance(window)
+        queryTokenID(window)
+        queryTokenData(window)
     })
 
     const toMe = erc20.filters.Transfer(null, currentAccount)
     erc20.on(toMe, (from, to, amount, event) => {
         console.log('Transfer|received',  {from, to, amount, event} )
         queryTokenBalance(window)
+        queryTokenID(window)
+        queryTokenData(window)
     })
 
     // remove listener when the component is unmounted
@@ -87,23 +106,22 @@ export default function ReadERC20(props:Props){
     console.log('currentAccount:'+currentAccount);
     erc20.balanceOf(currentAccount)
     .then((result:string)=>{
-        SetBalance(Number(ethers.utils.formatEther(result)))
+        SetBalance(Number(ethers.utils.formatUnits(result,0)))
     }).catch((e:Error)=>console.log(e))
   }
 
-  // https://goerli.etherscan.io/address/0x15987a0417d14cc6f3554166bcb4a590f6891b18#readContract
-  // https://mp7hotepqeejjqfwsagp5be5ugq35nnkqgpfcxpzmcnw2ctwfhrq.arweave.net/Y_53TI-BCJTAtpAM_oSdoaG-taqBnlFd-WCbbQp2KeM
-  // https://testnets.opensea.io/zh-CN/assets/goerli/0x15987a0417d14cc6f3554166bcb4a590f6891b18/156102
   async function queryTokenID(window:any){
     const provider = new ethers.providers.Web3Provider(window.ethereum)
     const erc20:Contract = new ethers.Contract(addressContract, abi, provider);
     console.log('queryTokenData:currentAccount:'+currentAccount);
     const index : number= 0;
+    console.log("tokenIDNum before:",TokenIDNum)
     erc20.tokenOfOwnerByIndex(currentAccount,index)
     .then((result:BigNumber)=>{
         console.log(result);
-        setTokenID(ethers.utils.formatEther(result));
+        setTokenID(ethers.utils.formatUnits(result,0));
         setTokenIDNum(result);
+        console.log("tokenIDNum after:",TokenIDNum)
   }).catch((e:Error)=>console.log(e))
   }
 
@@ -111,11 +129,9 @@ export default function ReadERC20(props:Props){
     const provider = new ethers.providers.Web3Provider(window.ethereum)
     const erc20:Contract = new ethers.Contract(addressContract, abi, provider);
     console.log('queryTokenData:currentAccount:'+currentAccount);
-    // console.log(ethers.utils.parseEther(TokenID));
     erc20.tokenURI(TokenIDNum)
     .then((result:string)=>{
-        // SetBalance(Number(ethers.utils.formatEther(result)))
-        console.log("imageurl: "+result);
+        console.log("tokenuri: "+result);
         console.log(result.replace("ar://","https://r6xtd6cyukdv25xoj32pwpjc2gbxqvwej4tbdkwljnx7skm2w4wq.arweave.net/"));
         const url = result.replace("ar://","https://r6xtd6cyukdv25xoj32pwpjc2gbxqvwej4tbdkwljnx7skm2w4wq.arweave.net/");
         setTokenURL(result.replace("ar://","https://r6xtd6cyukdv25xoj32pwpjc2gbxqvwej4tbdkwljnx7skm2w4wq.arweave.net/"));
@@ -124,26 +140,39 @@ export default function ReadERC20(props:Props){
   }
   
   async function fetchTokenInfo(url:string) {
-    fetch(TokenURL,{method:'get'}).then(res=>res.json())
+    fetch(url,{method:'get'}).then(res=>res.json())
     .then(data => {
-      console.log("result is ",data)
-      console.log(data[image])
+      console.log("result is ",data,data["name"],data["description"],data["image"],data["external_url"]);
+      setTokenName(data["name"]);
+      setTokenDesp(data["description"]);
+      setTokenImg(data["image"].replace("ar://","https://r6xtd6cyukdv25xoj32pwpjc2gbxqvwej4tbdkwljnx7skm2w4wq.arweave.net/"));
+      setTokenExternalUri(data["external_url"]);
+      console.log("setTokenName",TokenName,"setTokenDesp",TokenDesp)
     }).catch(error=>console.log(error))
   }
 
-
-
   return (
-    <div>
-        <Text><b>ERC20 Contract</b>: {addressContract}</Text>
-        <Text><b>ClassToken totalSupply</b>:{totalSupply} {symbol}</Text>
-        <Text my={4}><b>ClassToken in current account</b>: {balance} {symbol}</Text>
-        <Text my={4}><b>TokenID</b>: {balance} {symbol}</Text>
-        <Box boxSize='sm'>
-         <Image src={(TokenURL)} alt='test' />
-        </Box>
+    <Box w='100%' my={4}>
+        {currentAccount  
+          ? 
+      <div>
+      <Divider/>
+        <Text my={4}><b>Contract</b>: {addressContract}</Text>
+        <Text><b>Max Total Supply</b>: {totalSupply} {symbol}</Text>
+        <Text my={4}><b>BALANCE</b>: {balance} {symbol}</Text>
+      <Divider/>
+      {TokenName?
+      <Box boxSize='sm'>
+      <Text my={4}><b>TokenID</b>: {TokenID}</Text>
+      <Text my={4}><b>Token Name</b>: {TokenName}</Text>
+      <Text my={4}><b>Token Description</b>: {TokenDesp}</Text>
+      <Text my={4}><b>Token ExternalURI</b>: {TokenExternalUri}</Text>
+      <Image src={(TokenImg)} alt='loading...' />
+    </Box>
+    :<></>}
     </div>
+    : <></>}
+    </Box>
   )
+
 }
-//  {/* <Image src='https://r6xtd6cyukdv25xoj32pwpjc2gbxqvwej4tbdkwljnx7skm2w4wq.arweave.net/j68x-Fiih1127k70-z0i0YN4VsRPJhGqy0tv-Smaty0' alt='Dan Abramov' /> */}
-         

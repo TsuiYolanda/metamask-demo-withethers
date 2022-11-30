@@ -15,7 +15,6 @@ export default function Header() {
         </NextLink>
       </LinkBox>      
       <Spacer />
-      <Button >Button for Account</Button>
     </Flex>
   )
 }
