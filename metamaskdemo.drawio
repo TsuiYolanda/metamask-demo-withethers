@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-01T02:33:31.111Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="RvAuUETNzT-6SnrZ5qso" version="20.6.0" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-12-01T02:34:59.081Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="yF7nFvV0jCBaOn_VAUlK" version="20.6.0" type="github" pages="3">
   <diagram name="Page-1" id="b5b7bab2-c9e2-2cf4-8b2a-24fd1a2a6d21">
     <mxGraphModel dx="844" dy="628" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -254,14 +254,29 @@
         <mxCell id="wfkHhlJccwyZcgHeUHSA-13" value="アカウント情報をリクエスト" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="wfkHhlJccwyZcgHeUHSA-11">
           <mxGeometry x="10" y="20" width="130" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="wfkHhlJccwyZcgHeUHSA-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
+        <mxCell id="wfkHhlJccwyZcgHeUHSA-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="wfkHhlJccwyZcgHeUHSA-12">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="288" y="251" as="sourcePoint" />
             <mxPoint x="503" y="251" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="288" y="250" />
+            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="wfkHhlJccwyZcgHeUHSA-17" value="Web3Provider#eth_requestAccounts" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="370" y="220" width="60" height="30" as="geometry" />
+          <mxGeometry x="378" y="220" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wfkHhlJccwyZcgHeUHSA-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="525" y="261" as="sourcePoint" />
+            <mxPoint x="285" y="262" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="285" y="261" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wfkHhlJccwyZcgHeUHSA-19" value="accounts" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="378" y="260" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
