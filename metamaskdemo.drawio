@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-01T02:51:26.001Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="w2P6ztxB-ditFmPmE5PL" version="20.6.0" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-12-01T02:51:37.572Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="0rW72MLTLus4jdaQL67Z" version="20.6.0" type="github" pages="3">
   <diagram name="Page-1" id="b5b7bab2-c9e2-2cf4-8b2a-24fd1a2a6d21">
     <mxGraphModel dx="844" dy="628" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -261,13 +261,13 @@
           <mxGeometry x="414" y="251" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="wfkHhlJccwyZcgHeUHSA-20" value="" style="group;fontStyle=1" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="135" y="310.5" width="150" height="60" as="geometry" />
+          <mxGeometry x="135" y="309.5" width="150" height="49.5" as="geometry" />
         </mxCell>
         <mxCell id="wfkHhlJccwyZcgHeUHSA-21" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="wfkHhlJccwyZcgHeUHSA-20">
-          <mxGeometry width="150" height="60" as="geometry" />
+          <mxGeometry width="150" height="49.5" as="geometry" />
         </mxCell>
         <mxCell id="wfkHhlJccwyZcgHeUHSA-22" value="Crontactの取得" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;container=0;" vertex="1" parent="wfkHhlJccwyZcgHeUHSA-20">
-          <mxGeometry x="10" y="17" width="130" height="30" as="geometry" />
+          <mxGeometry x="10" y="14.024999999999999" width="130" height="24.75" as="geometry" />
         </mxCell>
         <mxCell id="wfkHhlJccwyZcgHeUHSA-23" value="" style="group" vertex="1" connectable="0" parent="1">
           <mxGeometry x="616" y="304" width="150" height="60" as="geometry" />
