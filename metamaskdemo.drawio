@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-01T02:52:26.321Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="0Q73gwCOaJEGjO_Skg4A" version="20.6.0" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-12-01T02:55:11.410Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="eITgRGTOF3GM74k6K2fY" version="20.6.0" type="github" pages="3">
   <diagram name="Page-1" id="b5b7bab2-c9e2-2cf4-8b2a-24fd1a2a6d21">
     <mxGraphModel dx="844" dy="628" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -294,6 +294,36 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="287.5" y="333" as="sourcePoint" />
             <mxPoint x="612.5" y="333" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wfkHhlJccwyZcgHeUHSA-43" value="" style="group;fontStyle=1" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="135" y="385.5" width="150" height="39.5" as="geometry" />
+        </mxCell>
+        <mxCell id="wfkHhlJccwyZcgHeUHSA-44" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="wfkHhlJccwyZcgHeUHSA-43">
+          <mxGeometry width="150" height="39.5" as="geometry" />
+        </mxCell>
+        <mxCell id="wfkHhlJccwyZcgHeUHSA-45" value="Crontact基本情報の取得" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;container=0;" vertex="1" parent="wfkHhlJccwyZcgHeUHSA-43">
+          <mxGeometry x="10" y="11.191666666666666" width="130" height="19.75" as="geometry" />
+        </mxCell>
+        <mxCell id="wfkHhlJccwyZcgHeUHSA-46" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="616" y="379" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wfkHhlJccwyZcgHeUHSA-47" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="wfkHhlJccwyZcgHeUHSA-46">
+          <mxGeometry width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wfkHhlJccwyZcgHeUHSA-48" value="ユーザにアカウント選択、接続承認を発行" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="wfkHhlJccwyZcgHeUHSA-46">
+          <mxGeometry x="10" y="20" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wfkHhlJccwyZcgHeUHSA-49" value="Contract.symbol、totalSupplyなど" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="334" y="379" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wfkHhlJccwyZcgHeUHSA-50" value="symbol、totalSupply" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;flipV=0;" vertex="1" parent="1">
+          <mxGeometry x="383" y="408" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wfkHhlJccwyZcgHeUHSA-51" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="287.5" y="408" as="sourcePoint" />
+            <mxPoint x="612.5" y="408" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
