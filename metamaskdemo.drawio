@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-01T02:42:35.266Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="qpQ_sjtjNibnx_z9A50q" version="20.6.0" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-12-01T02:50:20.010Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="hBhr1OHEFpyXDe-4e0pr" version="20.6.0" type="github" pages="3">
   <diagram name="Page-1" id="b5b7bab2-c9e2-2cf4-8b2a-24fd1a2a6d21">
     <mxGraphModel dx="844" dy="628" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -186,25 +186,25 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="2WO6aD5SNy231JVg03g9-1" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="90" y="80" width="660" height="660" as="geometry" />
+          <mxGeometry x="90" y="82" width="760" height="760" as="geometry" />
         </mxCell>
         <mxCell id="2WO6aD5SNy231JVg03g9-3" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="120" y="150" width="180" height="550" as="geometry" />
         </mxCell>
         <mxCell id="2WO6aD5SNy231JVg03g9-4" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="513" y="150" width="180" height="550" as="geometry" />
+          <mxGeometry x="597" y="150" width="180" height="550" as="geometry" />
         </mxCell>
         <mxCell id="2WO6aD5SNy231JVg03g9-5" value="Browser" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="120" y="90" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="2WO6aD5SNy231JVg03g9-6" value="Blockchain Node" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="775" y="168" width="170" height="70" as="geometry" />
+          <mxGeometry x="883" y="168" width="170" height="70" as="geometry" />
         </mxCell>
         <mxCell id="2WO6aD5SNy231JVg03g9-15" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(248, 249, 250); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Demo App&lt;br&gt;with Ethers.js&lt;br&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="170" y="173" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="wfkHhlJccwyZcgHeUHSA-2" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="775" y="278" width="200" height="125" as="geometry" />
+          <mxGeometry x="868" y="278" width="200" height="125" as="geometry" />
         </mxCell>
         <mxCell id="2WO6aD5SNy231JVg03g9-12" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="wfkHhlJccwyZcgHeUHSA-2" target="2WO6aD5SNy231JVg03g9-11">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -234,7 +234,7 @@
           <mxGeometry x="70" y="10" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="wfkHhlJccwyZcgHeUHSA-3" value="&lt;meta charset=&quot;utf-8&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(248, 249, 250); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Wallet(Metamask)&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="553" y="168" width="100" height="40" as="geometry" />
+          <mxGeometry x="637" y="168" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="wfkHhlJccwyZcgHeUHSA-10" value="" style="group;fontStyle=1" vertex="1" connectable="0" parent="1">
           <mxGeometry x="135" y="220" width="150" height="60" as="geometry" />
@@ -246,7 +246,7 @@
           <mxGeometry x="10" y="20" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="wfkHhlJccwyZcgHeUHSA-11" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="528" y="220" width="150" height="60" as="geometry" />
+          <mxGeometry x="612" y="220" width="150" height="60" as="geometry" />
         </mxCell>
         <mxCell id="wfkHhlJccwyZcgHeUHSA-12" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="wfkHhlJccwyZcgHeUHSA-11">
           <mxGeometry width="150" height="60" as="geometry" />
@@ -254,29 +254,11 @@
         <mxCell id="wfkHhlJccwyZcgHeUHSA-13" value="ユーザにアカウント選択、接続承認を発行" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="wfkHhlJccwyZcgHeUHSA-11">
           <mxGeometry x="10" y="20" width="130" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="wfkHhlJccwyZcgHeUHSA-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="wfkHhlJccwyZcgHeUHSA-12">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="288" y="251" as="sourcePoint" />
-            <mxPoint x="503" y="251" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="288" y="250" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
         <mxCell id="wfkHhlJccwyZcgHeUHSA-17" value="Web3Provider.send(eth_requestAccounts)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="378" y="224" width="60" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="wfkHhlJccwyZcgHeUHSA-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="525" y="261" as="sourcePoint" />
-            <mxPoint x="285" y="262" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="285" y="261" />
-            </Array>
-          </mxGeometry>
+          <mxGeometry x="420" y="220" width="60" height="34" as="geometry" />
         </mxCell>
         <mxCell id="wfkHhlJccwyZcgHeUHSA-19" value="accounts" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="378" y="260" width="60" height="30" as="geometry" />
+          <mxGeometry x="414" y="251" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="wfkHhlJccwyZcgHeUHSA-20" value="" style="group;fontStyle=1" vertex="1" connectable="0" parent="1">
           <mxGeometry x="135" y="310.5" width="150" height="60" as="geometry" />
@@ -285,10 +267,10 @@
           <mxGeometry width="150" height="60" as="geometry" />
         </mxCell>
         <mxCell id="wfkHhlJccwyZcgHeUHSA-22" value="Crontactを取得" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;container=0;" vertex="1" parent="wfkHhlJccwyZcgHeUHSA-20">
-          <mxGeometry x="10" y="20" width="130" height="30" as="geometry" />
+          <mxGeometry x="10" y="17" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="wfkHhlJccwyZcgHeUHSA-23" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="532" y="304" width="150" height="60" as="geometry" />
+          <mxGeometry x="616" y="304" width="150" height="60" as="geometry" />
         </mxCell>
         <mxCell id="wfkHhlJccwyZcgHeUHSA-24" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="wfkHhlJccwyZcgHeUHSA-23">
           <mxGeometry width="150" height="60" as="geometry" />
@@ -296,29 +278,35 @@
         <mxCell id="wfkHhlJccwyZcgHeUHSA-25" value="ユーザにアカウント選択、接続承認を発行" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="wfkHhlJccwyZcgHeUHSA-23">
           <mxGeometry x="10" y="20" width="130" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="wfkHhlJccwyZcgHeUHSA-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="wfkHhlJccwyZcgHeUHSA-24">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="292" y="335" as="sourcePoint" />
-            <mxPoint x="507" y="335" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="292" y="334" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
         <mxCell id="wfkHhlJccwyZcgHeUHSA-27" value="Contract(addressContract, abi, provider)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="297" y="307" width="220" height="30" as="geometry" />
+          <mxGeometry x="334" y="304" width="220" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="wfkHhlJccwyZcgHeUHSA-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
+        <mxCell id="wfkHhlJccwyZcgHeUHSA-29" value="contract" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="410" y="341" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wfkHhlJccwyZcgHeUHSA-34" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.658;exitY=0.357;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="529" y="345" as="sourcePoint" />
-            <mxPoint x="289" y="346" as="targetPoint" />
+            <mxPoint x="309.02" y="332.31999999999994" as="sourcePoint" />
+            <mxPoint x="589.0999999999999" y="332" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="289" y="345" />
+              <mxPoint x="309.0999999999999" y="331" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="wfkHhlJccwyZcgHeUHSA-29" value="accounts" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="382" y="341" width="60" height="30" as="geometry" />
+        <mxCell id="wfkHhlJccwyZcgHeUHSA-35" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.658;exitY=0.357;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="587.0799999999999" y="344" as="sourcePoint" />
+            <mxPoint x="307" y="344" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="590" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wfkHhlJccwyZcgHeUHSA-36" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="285" y="250" as="sourcePoint" />
+            <mxPoint x="610" y="250" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
