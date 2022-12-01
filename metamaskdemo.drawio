@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-01T02:58:52.147Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="YnUDjQX4Z6aAnNGir4SE" version="20.6.0" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-12-01T02:58:59.045Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="_mi8E8Cr8JuVJtYiVlg_" version="20.6.0" type="github" pages="3">
   <diagram name="Page-1" id="b5b7bab2-c9e2-2cf4-8b2a-24fd1a2a6d21">
     <mxGraphModel dx="844" dy="628" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -347,7 +347,7 @@
         <mxCell id="wfkHhlJccwyZcgHeUHSA-59" value="Contract.tokenOfOwnerByIndex(Owner Account）" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="310" y="456" width="280" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="wfkHhlJccwyZcgHeUHSA-60" value="symbol、totalSupply" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;flipV=0;" vertex="1" parent="1">
+        <mxCell id="wfkHhlJccwyZcgHeUHSA-60" value="TokenID" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;flipV=0;" vertex="1" parent="1">
           <mxGeometry x="382" y="485" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="wfkHhlJccwyZcgHeUHSA-61" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=1;" edge="1" parent="1">
